@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кюммельгуэй</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        header h1 img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 10%;
+            background-color: #e8f5e9;
+        }
+        .hero h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .hero .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .hero .buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            color: white;
+            background-color: #4CAF50;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .hero .buttons a.secondary {
+            background-color: #8bc34a;
+        }
+        section {
+            padding: 40px 10%;
+        }
+        .about, .features {
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .about h3, .features h3 {
+            margin-top: 0;
+        }
+        .register, .profile, .add-content {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .register h3, .profile h3, .add-content h3 {
+            margin-top: 0;
+            text-align: center;
+        }
+        .register form, .profile form, .add-content form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .register form label, .profile form label, .add-content form label {
+            font-weight: bold;
+        }
+        .register form input, .profile form input, .add-content form input, .add-content form textarea, .add-content form select {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .register form button, .profile form button, .add-content form button {
+            padding: 10px;
+            font-size: 16px;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            font-size: 14px;
+        }
+        .language-switcher {
+            display: flex;
+            gap: 10px;
+        }
+        .language-switcher a {
+            color: white;
+            text-decoration: underline;
+            font-size: 14px;
+        }
+        .social-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: #4CAF50;
+            text-decoration: none;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="logo.png" alt="Логотип">
+            Кюммельгуэй
+        </h1>
+        <nav>
+            <a href="#about">О проекте</a>
+            <a href="#features">Возможности</a>
+            <a href="#register">Присоединиться</a>
+            <a href="#profile">Личный кабинет</a>
+            <a href="#add-content">Добавить книгу/мерч</a>
+        </nav>
+        <div class="language-switcher">
+            <a href="#">Русский</a>
+            <a href="#">English</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Читай стильно. Воплощай в жизнь.</h2>
+        <p>Платформа, которая помогает найти реальные вещи из книг: мерч, локации, еду, музыку и многое другое.</p>
+        <div class="buttons">
+            <a href="#register">Присоединиться</a>
+            <a href="#learn-more" class="secondary">Узнать больше</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h3>О проекте</h3>
+        <p>Кюммельгуэй помогает воплощать в реальность то, что вдохновляет из книг. Это может быть еда, напитки, музыка, сувениры, или даже локации. Мы объединяем читателей и предоставляем платформу для обмена идеями и вдохновением.</p>
+    </section>
+
+    <section id="features" class="features">
+        <h3>Возможности</h3>
+        <ul>
+            <li>Добавляйте свои любимые книги и связанные с ними реальные предметы или идеи.</li>
+            <li>Ищите и находите мерч, связанный с вашими любимыми произведениями.</li>
+            <li>Используйте фильтры для поиска по категориям: книги, еда, напитки, культура, музыка и многое другое.</li>
+            <li>Следите за актуальными культурными событиями, связанными с миром книг.</li>
+        </ul>
+    </section>
+
+    <section id="register" class="register">
+        <h3>Регистрация</h3>
+        <form action="#" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+
+        <div class="google-auth">
+            <p>Или войдите через Google:</p>
+            <button>Войти через Google</button>
+        </div>
+    </section>
+
+    <section id="profile" class="profile">
+        <h3>Личный кабинет</h3>
+        <form action="#" method="post">
+            <label for="profile-name">Имя:</label>
+            <input type="text" id="profile-name" name="profile-name" value="Ваше имя" required>
+
+            <label for="profile-email">Email:</label>
+            <input type="email" id="profile-email" name="profile-email" value="Ваш email" disabled>
+
+            <button type="submit">Сохранить изменения</button>
+        </form>
+    </section>
+
+    <section id="add-content" class="add-content">
+        <h3>Добавить книгу/мерч</h3>
+        <form action="#" method="post">
+            <label for="book-title">Название книги:</label>
+            <input type="text" id="book-title" name="book-title" required>
+
+            <label for="merch-category">Категория мерча:</label>
+            <select id="merch-category" name="merch-category" required>
+                <option value="location">Локация</option>
+                <option value="food">Еда</option>
+                <option value="drink">Напиток</option>
+                <option value="culture">Культура</option>
+                <option value="music">Музыка</option>
+                <option value="souvenir">Сувенир</option>
+            </select>
+
+            <label for="merch-description">Описание мерча:</label>
+            <textarea id="merch-description" name="merch-description" rows="4" required></textarea>
+
+            <label for="merch-link">Ссылка (если есть):</label>
+            <input type="url" id="merch-link" name="merch-link">
+
+            <label for="merch-image">Изображение мерча (необязательно):</label>
+            <input type="file" id="merch-image" name="merch-image" accept="image/*">
+
+            <button type="submit">Добавить</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Кюммельгуэй © 2024. Все права защищены.</p>
+        <div class="social-links">
+            <a href="https://t.me/kummelgway">Telegram</a>
+            <a href="https://www.instagram.com/kummelgway/">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
